@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
+        
     @IBOutlet strong var levelField0: UIButton = UIButton()
     @IBOutlet strong var levelField1: UIButton = UIButton()
     @IBOutlet strong var levelField2: UIButton = UIButton()
@@ -34,18 +33,7 @@ class ViewController: UIViewController {
     @IBAction func levelFieldPressed(sender: UIButton) {
         println(sender.restorationIdentifier)
         if let buttonName = sender.restorationIdentifier? {
-            switch buttonName {
-                case "lf0": levelField0.backgroundColor = UIColor.redColor()
-                case "lf1": levelField1.backgroundColor = UIColor.redColor()
-                case "lf2": levelField2.backgroundColor = UIColor.redColor()
-                case "lf3": levelField3.backgroundColor = UIColor.redColor()
-                case "lf4": levelField4.backgroundColor = UIColor.redColor()
-                case "lf5": levelField5.backgroundColor = UIColor.redColor()
-                case "lf6": levelField6.backgroundColor = UIColor.redColor()
-                case "lf7": levelField7.backgroundColor = UIColor.redColor()
-                case "lf8": levelField8.backgroundColor = UIColor.redColor()
-                default: println("ERROR: invalid sender.restorationIdentifier")
-            }
+            self.setValue(UIColor.redColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
         }
     }
     
