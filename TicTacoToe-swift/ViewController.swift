@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    enum player {
+        case Cross
+        case Nought
+    }
+    
     @IBOutlet strong var levelField0: UIButton = UIButton()
     @IBOutlet strong var levelField1: UIButton = UIButton()
     @IBOutlet strong var levelField2: UIButton = UIButton()
@@ -20,21 +25,34 @@ class ViewController: UIViewController {
     @IBOutlet strong var levelField7: UIButton = UIButton()
     @IBOutlet strong var levelField8: UIButton = UIButton()
     
+    var currentPlayer = player.Nought
+    var level = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func levelFieldPressed(sender: UIButton) {
-        println(sender.restorationIdentifier)
+        println("\(sender.restorationIdentifier) pressed")
+        
         if let buttonName = sender.restorationIdentifier? {
-            self.setValue(UIColor.redColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
+            switch currentPlayer {
+            case .Cross:
+                self.setValue(UIColor.redColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
+            case .Nought:
+                self.setValue(UIColor.blueColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
+            }
+            
         }
+        
+        if self.currentPlayer == .Cross {
+            currentPlayer = .Nought
+            println("currentPlayer is now Nought")
+        } else if self.currentPlayer == .Nought{
+            currentPlayer = .Cross
+            println("currentPlayer is now Cross")
+        }
+    
     }
     
 }
