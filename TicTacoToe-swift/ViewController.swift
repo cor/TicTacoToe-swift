@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet strong var levelField7: UIButton = UIButton()
     @IBOutlet strong var levelField8: UIButton = UIButton()
     
+    @IBOutlet strong var currentPlayerLabel: UILabel = UILabel()
+    
     enum Player {
         case Cross
         case Nought
@@ -58,17 +60,20 @@ class ViewController: UIViewController {
         
         self.switchPlayer()
         self.updateLevel()
-    
     }
     
     func updateLevel() {
         for i in 0..<level.count {
             switch self.level[i] {
-            case .Empty: self.setValue(UIColor.whiteColor(),    forKeyPath: "self.levelField\(i).backgroundColor")
-            case .Cross: self.setValue(UIColor.redColor(),      forKeyPath: "self.levelField\(i).backgroundColor")
+            case .Empty:  self.setValue(UIColor.whiteColor(),   forKeyPath: "self.levelField\(i).backgroundColor")
+            case .Cross:  self.setValue(UIColor.redColor(),     forKeyPath: "self.levelField\(i).backgroundColor")
             case .Nought: self.setValue(UIColor.blueColor(),    forKeyPath: "self.levelField\(i).backgroundColor")
-            default: println("invalid levelField value")
             }
+        }
+        
+        switch self.currentPlayer {
+        case .Cross:  self.currentPlayerLabel.text = "Cross"
+        case .Nought: self.currentPlayerLabel.text = "Nought"
         }
     }
     
@@ -80,7 +85,5 @@ class ViewController: UIViewController {
             currentPlayer = .Cross
             println("currentPlayer is now Cross")
         }
-        
     }
-    
 }
