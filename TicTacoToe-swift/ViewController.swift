@@ -10,11 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    enum player {
-        case Cross
-        case Nought
-    }
-    
+    //Not using IBOutletCollection because it doesn't have swift support
     @IBOutlet strong var levelField0: UIButton = UIButton()
     @IBOutlet strong var levelField1: UIButton = UIButton()
     @IBOutlet strong var levelField2: UIButton = UIButton()
@@ -25,26 +21,58 @@ class ViewController: UIViewController {
     @IBOutlet strong var levelField7: UIButton = UIButton()
     @IBOutlet strong var levelField8: UIButton = UIButton()
     
-    var currentPlayer = player.Nought
-    var level = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    enum Player {
+        case Cross
+        case Nought
+    }
     
+    enum LevelState {
+        case Cross
+        case Nought
+        case Empty
+    }
+    
+    var currentPlayer = Player.Nought
+    var level: [LevelState] = [.Empty,.Empty,.Empty,.Empty,.Empty,.Empty,.Empty,.Empty,.Empty]
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.updateLevel()
     }
     
     @IBAction func levelFieldPressed(sender: UIButton) {
         println("\(sender.restorationIdentifier) pressed")
         
-        if let buttonName = sender.restorationIdentifier? {
-            switch currentPlayer {
-            case .Cross:
-                self.setValue(UIColor.redColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
+        if let buttonNumber = sender.restorationIdentifier? {
+            switch self.currentPlayer {
             case .Nought:
-                self.setValue(UIColor.blueColor(), forKeyPath: "self.levelField\(Array(buttonName)[2]).backgroundColor")
+                if level[String(Array(buttonNumber)[2]).toInt()!] == .Empty {
+                    level[String(Array(buttonNumber)[2]).toInt()!] = .Nought
+                }
+            case .Cross:
+                if level[String(Array(buttonNumber)[2]).toInt()!] == .Empty {
+                    level[String(Array(buttonNumber)[2]).toInt()!] = .Cross
+                }
             }
-            
         }
         
+        self.switchPlayer()
+        self.updateLevel()
+    
+    }
+    
+    func updateLevel() {
+        for i in 0..<level.count {
+            switch self.level[i] {
+            case .Empty: self.setValue(UIColor.whiteColor(),    forKeyPath: "self.levelField\(i).backgroundColor")
+            case .Cross: self.setValue(UIColor.redColor(),      forKeyPath: "self.levelField\(i).backgroundColor")
+            case .Nought: self.setValue(UIColor.blueColor(),    forKeyPath: "self.levelField\(i).backgroundColor")
+            default: println("invalid levelField value")
+            }
+        }
+    }
+    
+    func switchPlayer(){
         if self.currentPlayer == .Cross {
             currentPlayer = .Nought
             println("currentPlayer is now Nought")
@@ -52,7 +80,7 @@ class ViewController: UIViewController {
             currentPlayer = .Cross
             println("currentPlayer is now Cross")
         }
-    
+        
     }
     
 }
