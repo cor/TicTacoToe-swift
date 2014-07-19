@@ -202,6 +202,15 @@
                                     <rect key="frame" x="156" y="425" width="144" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gamewinnerLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upX-WU-9P3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="62" width="136" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -210,6 +219,7 @@
                                 <exclude reference="Jeb-TY-2nW"/>
                                 <exclude reference="BEV-FD-rDQ"/>
                                 <exclude reference="4H7-PU-QL6"/>
+                                <exclude reference="upX-WU-9P3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -218,11 +228,13 @@
                                 <include reference="Jeb-TY-2nW"/>
                                 <include reference="BEV-FD-rDQ"/>
                                 <include reference="4H7-PU-QL6"/>
+                                <include reference="upX-WU-9P3"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="currentPlayerLabel" destination="4H7-PU-QL6" id="rJF-lK-UHb"/>
+                        <outlet property="gamewinnerLabel" destination="upX-WU-9P3" id="JLI-kS-8Sy"/>
                         <outlet property="levelField0" destination="Gzq-SL-5sz" id="KB5-ad-H47"/>
                         <outlet property="levelField1" destination="byy-0x-fol" id="M57-bF-yoU"/>
                         <outlet property="levelField2" destination="Mmg-Dy-aYd" id="j5E-M2-4QR"/>
