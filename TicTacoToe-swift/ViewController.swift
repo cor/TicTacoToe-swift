@@ -11,15 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     //Not using IBOutletCollection because it doesn't have swift support
-    @IBOutlet strong var levelField0: UIButton = UIButton()
-    @IBOutlet strong var levelField1: UIButton = UIButton()
-    @IBOutlet strong var levelField2: UIButton = UIButton()
-    @IBOutlet strong var levelField3: UIButton = UIButton()
-    @IBOutlet strong var levelField4: UIButton = UIButton()
-    @IBOutlet strong var levelField5: UIButton = UIButton()
-    @IBOutlet strong var levelField6: UIButton = UIButton()
-    @IBOutlet strong var levelField7: UIButton = UIButton()
-    @IBOutlet strong var levelField8: UIButton = UIButton()
+ 
+    @IBOutlet strong var levelFieldImage0: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage1: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage2: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage3: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage4: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage5: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage6: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage7: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage8: UIImageView = UIImageView()
+    
     
     @IBOutlet strong var currentPlayerLabel: UILabel = UILabel()
     @IBOutlet strong var gamewinnerLabel: UILabel = UILabel()
@@ -65,7 +67,6 @@ class ViewController: UIViewController {
                 }
             }
             
-            
             self.switchPlayer()
             self.checkForVictory()
             self.updateLevel()
@@ -76,11 +77,12 @@ class ViewController: UIViewController {
     func updateLevel() {
         for i in 0..<level.count {
             switch self.level[i] {
-            case .Empty:  self.setValue(UIColor.whiteColor(),   forKeyPath: "self.levelField\(i).backgroundColor")
-            case .Cross:  self.setValue(UIColor.redColor(),     forKeyPath: "self.levelField\(i).backgroundColor")
-            case .Nought: self.setValue(UIColor.blueColor(),    forKeyPath: "self.levelField\(i).backgroundColor")
+            case .Empty:  self.setValue(UIImage(named: "Empty"),   forKeyPath: "self.levelFieldImage\(i).image")
+            case .Cross:  self.setValue(UIImage(named: "Cross"),   forKeyPath: "self.levelFieldImage\(i).image")
+            case .Nought: self.setValue(UIImage(named: "Nought"),  forKeyPath: "self.levelFieldImage\(i).image")
             }
         }
+   
         
         switch self.currentPlayer {
         case .Cross:  self.currentPlayerLabel.text = "Cross"

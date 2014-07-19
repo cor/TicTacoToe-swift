@@ -408,6 +408,7 @@
 				87FA7084196C52EF00EE0789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87FA7085196C52EF00EE0789 /* Build configuration list for PBXNativeTarget "TicTacoToe-swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				87FA7087196C52EF00EE0789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

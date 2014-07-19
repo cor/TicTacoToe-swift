@@ -19,10 +19,64 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDT-5r-tQm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzq-SL-5sz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lml-8z-3f8">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="5" y="5" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huM-ox-SbM">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="105" y="5" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJa-8h-CZh">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="205" y="5" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-mI-iDl">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="5" y="105" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2n-Dh-sPS">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="105" y="105" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="19O-kp-aZl">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="205" y="105" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bze-P8-dIC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="5" y="205" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nqv-XD-k9f">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="105" y="205" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-mN-cFr">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="205" y="205" width="100" height="100"/>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleAspectFill" restorationIdentifier="lf0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzq-SL-5sz">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -33,10 +87,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3vX-lB-6i6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byy-0x-fol">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byy-0x-fol">
                                         <rect key="frame" x="100" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -47,10 +101,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Glq-Bx-t92"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmg-Dy-aYd">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmg-Dy-aYd">
                                         <rect key="frame" x="200" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -61,10 +115,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wZX-VI-kzH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIt-2N-AaC">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIt-2N-AaC">
                                         <rect key="frame" x="100" y="100" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -75,10 +129,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ClD-Hm-0jq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-Px-5ul">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-Px-5ul">
                                         <rect key="frame" x="200" y="100" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -89,10 +143,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R5f-7f-jPS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-IZ-xbf">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-IZ-xbf">
                                         <rect key="frame" x="0.0" y="200" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -103,10 +157,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aR7-Vw-opg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-uG-YLD">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-uG-YLD">
                                         <rect key="frame" x="200" y="200" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -117,10 +171,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dX8-FV-xoU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rt-23-2Sd">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rt-23-2Sd">
                                         <rect key="frame" x="0.0" y="100" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -131,10 +185,10 @@
                                             <action selector="levelFieldPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IvQ-mX-ois"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lf6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-05-oB3">
+                                    <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" restorationIdentifier="lf6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-05-oB3">
                                         <rect key="frame" x="100" y="200" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.93044714922169336" blue="0.69316449217396703" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="x">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -149,6 +203,15 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="default">
                                     <mask key="subviews">
+                                        <exclude reference="Lml-8z-3f8"/>
+                                        <exclude reference="huM-ox-SbM"/>
+                                        <exclude reference="cJa-8h-CZh"/>
+                                        <exclude reference="ZXp-mI-iDl"/>
+                                        <exclude reference="N2n-Dh-sPS"/>
+                                        <exclude reference="19O-kp-aZl"/>
+                                        <exclude reference="bze-P8-dIC"/>
+                                        <exclude reference="nqv-XD-k9f"/>
+                                        <exclude reference="EFx-mN-cFr"/>
                                         <exclude reference="Gzq-SL-5sz"/>
                                         <exclude reference="byy-0x-fol"/>
                                         <exclude reference="Mmg-Dy-aYd"/>
@@ -163,6 +226,15 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="5" y="85" width="310" height="310"/>
                                     <mask key="subviews">
+                                        <include reference="Lml-8z-3f8"/>
+                                        <include reference="huM-ox-SbM"/>
+                                        <include reference="cJa-8h-CZh"/>
+                                        <include reference="ZXp-mI-iDl"/>
+                                        <include reference="N2n-Dh-sPS"/>
+                                        <include reference="19O-kp-aZl"/>
+                                        <include reference="bze-P8-dIC"/>
+                                        <include reference="nqv-XD-k9f"/>
+                                        <include reference="EFx-mN-cFr"/>
                                         <include reference="Gzq-SL-5sz"/>
                                         <include reference="byy-0x-fol"/>
                                         <include reference="Mmg-Dy-aYd"/>
@@ -175,7 +247,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TicTacoToe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-TY-2nW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TicTacoToe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-TY-2nW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -235,15 +307,15 @@
                     <connections>
                         <outlet property="currentPlayerLabel" destination="4H7-PU-QL6" id="rJF-lK-UHb"/>
                         <outlet property="gamewinnerLabel" destination="upX-WU-9P3" id="JLI-kS-8Sy"/>
-                        <outlet property="levelField0" destination="Gzq-SL-5sz" id="KB5-ad-H47"/>
-                        <outlet property="levelField1" destination="byy-0x-fol" id="M57-bF-yoU"/>
-                        <outlet property="levelField2" destination="Mmg-Dy-aYd" id="j5E-M2-4QR"/>
-                        <outlet property="levelField3" destination="EIt-2N-AaC" id="H5r-nI-65e"/>
-                        <outlet property="levelField4" destination="vFD-Px-5ul" id="NrI-Sp-5lb"/>
-                        <outlet property="levelField5" destination="DU6-IZ-xbf" id="ECI-7t-tPc"/>
-                        <outlet property="levelField6" destination="cL5-05-oB3" id="uiG-An-L73"/>
-                        <outlet property="levelField7" destination="QQR-uG-YLD" id="Xej-Vq-itr"/>
-                        <outlet property="levelField8" destination="7rt-23-2Sd" id="yjR-Oz-rhk"/>
+                        <outlet property="levelFieldImage0" destination="Lml-8z-3f8" id="u7v-bp-a9n"/>
+                        <outlet property="levelFieldImage1" destination="huM-ox-SbM" id="FMS-cK-sn5"/>
+                        <outlet property="levelFieldImage2" destination="cJa-8h-CZh" id="CAT-sD-GQo"/>
+                        <outlet property="levelFieldImage3" destination="ZXp-mI-iDl" id="bjq-6F-ZHe"/>
+                        <outlet property="levelFieldImage4" destination="N2n-Dh-sPS" id="yyc-bd-8ws"/>
+                        <outlet property="levelFieldImage5" destination="19O-kp-aZl" id="hnA-QR-Z7m"/>
+                        <outlet property="levelFieldImage6" destination="bze-P8-dIC" id="BSk-Pr-gni"/>
+                        <outlet property="levelFieldImage7" destination="nqv-XD-k9f" id="n7l-y2-l9g"/>
+                        <outlet property="levelFieldImage8" destination="EFx-mN-cFr" id="oOI-Zp-fU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
