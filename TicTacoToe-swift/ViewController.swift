@@ -71,6 +71,8 @@ class ViewController: UIViewController {
             self.checkForVictory()
             self.updateLevel()
         
+        } else {
+            self.resetGame()
         }
     }
     
@@ -117,5 +119,16 @@ class ViewController: UIViewController {
             currentPlayer = .Cross
             println("currentPlayer is now Cross")
         }
+    }
+    
+    func resetGame(){
+        for i in 0..<level.count {
+            level[i] = LevelState.Empty
+        }
+        
+        self.currentPlayer = Player.Nought
+        self.gamewinner = nil
+        
+        updateLevel()
     }
 }
