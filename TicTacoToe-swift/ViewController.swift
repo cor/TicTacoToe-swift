@@ -12,19 +12,19 @@ class ViewController: UIViewController {
     
     //Not using IBOutletCollection because it doesn't have swift support
  
-    @IBOutlet strong var levelFieldImage0: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage1: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage2: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage3: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage4: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage5: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage6: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage7: UIImageView = UIImageView()
-    @IBOutlet strong var levelFieldImage8: UIImageView = UIImageView()
+    @IBOutlet strong var levelFieldImage0: UIImageView!
+    @IBOutlet strong var levelFieldImage1: UIImageView!
+    @IBOutlet strong var levelFieldImage2: UIImageView!
+    @IBOutlet strong var levelFieldImage3: UIImageView!
+    @IBOutlet strong var levelFieldImage4: UIImageView!
+    @IBOutlet strong var levelFieldImage5: UIImageView!
+    @IBOutlet strong var levelFieldImage6: UIImageView!
+    @IBOutlet strong var levelFieldImage7: UIImageView!
+    @IBOutlet strong var levelFieldImage8: UIImageView!
     
     
-    @IBOutlet strong var currentPlayerLabel: UILabel = UILabel()
-    @IBOutlet strong var gamewinnerLabel: UILabel = UILabel()
+    @IBOutlet strong var currentPlayerLabel: UILabel!
+    @IBOutlet strong var gamewinnerLabel: UILabel!
     
     enum Player {
         case Cross
