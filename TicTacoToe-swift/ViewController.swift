@@ -59,15 +59,18 @@ class ViewController: UIViewController {
                 case .Nought:
                     if level[String(Array(buttonNumber)[2]).toInt()!] == .Empty {
                         level[String(Array(buttonNumber)[2]).toInt()!] = .Nought
+                        self.switchPlayer()
+
                     }
                 case .Cross:
                     if level[String(Array(buttonNumber)[2]).toInt()!] == .Empty {
                         level[String(Array(buttonNumber)[2]).toInt()!] = .Cross
+                        self.switchPlayer()
+
                     }
                 }
             }
             
-            self.switchPlayer()
             self.checkForVictory()
             self.updateLevel()
         
